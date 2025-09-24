@@ -1,0 +1,73 @@
+:root{
+--bg:#0f1724;
+--card:#0b1220;
+--muted:#9aa6b2;
+--accent:#7c5cff;
+--glass: rgba(255,255,255,0.04);
+--radius:14px;
+font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+
+html,body{height:100%;}
+body{
+margin:0;
+display:grid;
+/* place-items:center; */
+/* background:linear-gradient(180deg,#071021 0%, #071725 100%); */
+color:#e6eef6;
+padding:30px;
+}
+
+.container{
+    display:flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.card{
+width:380px;
+max-width:92vw;
+background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+border-radius:var(--radius);
+box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+overflow:hidden;
+border:1px solid rgba(255,255,255,0.04);
+transition:transform .28s cubic-bezier(.2,.9,.3,1), box-shadow .28s;
+display:flex;
+flex-direction:column;
+}
+
+
+.card:hover{
+transform:translateY(-8px) scale(1.01);
+box-shadow: 0 20px 50px rgba(2,6,23,0.75);
+}
+
+
+.card__media{
+height:150px;
+background:linear-gradient(135deg,var(--accent), #4cc9f0);
+display:flex;
+align-items:flex-end;
+padding:18px;
+color:white;
+}
+
+
+.card__content{
+padding:18px 18px 22px 18px;
+background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+}
+
+
+.title{
+font-size:18px;
+font-weight:700;
+margin:0 0 6px 0;
+letter-spacing: -0.2px;
+}
+
+
+.subtitle{
+}
