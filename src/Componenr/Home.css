@@ -20,9 +20,12 @@ padding:30px;
 }
 
 .container{
-    display:flex;
-    gap: 30px;
-    margin-top: 15px;
+    margin-top: 10px;
+ display: flex;
+ flex-wrap: wrap;      
+gap: 30px;
+
+
 }
 
 .card{
